@@ -1,0 +1,6 @@
+# Project exclude paths
+/fly-leadnews-admin/target/
+/fly-leadnews-apis/target/
+/fly-leadnews-common/target/
+/fly-leadnews-model/target/
+/fly-leadnews-utils/target/
