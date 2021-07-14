@@ -1,4 +1,4 @@
-package com.fly.admin.service;
+package com.fly.admin.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.fly.admin.mapper.AdChannerlMapper;
 
+import com.fly.admin.service.AdChannelService;
 import com.fly.model.admin.dtos.ChannelDto;
 import com.fly.model.admin.pojos.AdChannel;
 import com.fly.model.common.dtos.PageResponseResult;
