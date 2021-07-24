@@ -8,11 +8,11 @@ import com.fly.model.admin.dtos.ChannelDto;
 import com.fly.model.admin.pojos.AdChannel;
 import com.fly.model.common.dtos.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+/**
+ * 频道接口
+ */
 @RestController
 @RequestMapping("/api/v1/channel")
 public class AdChannerlController implements AdChannerlControllerApi {
@@ -26,21 +26,21 @@ public class AdChannerlController implements AdChannerlControllerApi {
         return adChannelService.findByNameAndPage(channelDto);
     }
 
-    @RequestMapping("/add")
+    @PostMapping("/save")
     @Override
     public ResponseResult addAdChannerl(@RequestBody AdChannel adChannel) {
         return adChannelService.addAdChannel(adChannel);
     }
 
-    @RequestMapping("/update")
+    @PostMapping("/update")
     @Override
     public ResponseResult updateAdChanner(@RequestBody AdChannel adChannel) {
         return adChannelService.updateAdChannel(adChannel);
     }
 
-    @RequestMapping("/delete")
+    @GetMapping("/del/{id}")
     @Override
-    public ResponseResult deleteSAdChannerById(@RequestParam("id") Integer id) {
+    public ResponseResult deleteSAdChannerById(@PathVariable("id") Integer id) {
         return adChannelService.deleteAdChannelById(id);
     }
 }
