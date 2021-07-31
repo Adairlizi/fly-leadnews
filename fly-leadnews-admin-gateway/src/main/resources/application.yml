@@ -1,0 +1,27 @@
+server:
+  port: 6001
+spring:
+  application:
+    name: fly-leadnews-admin-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 159.75.89.7:8848
+    gateway:
+      globalcors:
+        cors-configurations: #跨域请求处理
+          '[/**]': # 匹配所有请求
+            allowedOrigins: "*" #跨域处理 允许所有的域
+            allowedMethods: # 支持的方法
+              - GET
+              - POST
+              - PUT
+              - DELETE
+      routes:
+        # 平台管理
+        - id: admin
+          uri: lb://leadnews-admin-lzp
+          predicates:
+            - Path=/admin/**
+          filters:
+            - StripPrefix= 1
