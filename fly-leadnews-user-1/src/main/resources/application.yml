@@ -1,11 +1,11 @@
 server:
-  port: 9001
+  port: 9002
 spring:
   application:
-    name: leadnews-admin-lzp
+    name: leadnews-user-lzp
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://159.75.89.7:3306/leadnews_admin?useUnicode=true&autoReconnect=true&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true&serverTimezone=UTC
+    url: jdbc:mysql://159.75.89.7:3306/leadnews_user?useUnicode=true&autoReconnect=true&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true&serverTimezone=UTC
     username: root
     password: LIzi0033.
     hikari:
@@ -33,4 +33,4 @@ spring:
 mybatis-plus:
   mapper-locations: classpath*:mapper/*.xml
   # 设置别名包扫描路径，通过该属性可以给包中的类注册别名
-  type-aliases-package: com.fly.model.admin.pojos
+  type-aliases-package: com.fly.model.user.pojos

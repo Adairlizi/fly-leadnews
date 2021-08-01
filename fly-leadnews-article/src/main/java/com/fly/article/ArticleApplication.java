@@ -1,5 +1,4 @@
-package com.fly.admin;
-
+package com.fly.article;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import org.mybatis.spring.annotation.MapperScan;
@@ -11,13 +10,15 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 @MapperScan("com.fly.admin.mapper")
 @EnableDiscoveryClient
-public class AdminApplication {
+public class ArticleApplication {
+
+
     public static void main(String[] args) {
-        SpringApplication.run(AdminApplication.class,args);
+        SpringApplication.run(ArticleApplication.class, args);
     }
 
     @Bean
-    public PaginationInterceptor paginationInterceptor(){
+    public PaginationInterceptor paginationInterceptor () {
         return new PaginationInterceptor();
     }
 }

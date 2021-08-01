@@ -1,8 +1,8 @@
 server:
-  port: 9001
+  port: 9004
 spring:
   application:
-    name: leadnews-admin-lzp
+    name: leadnews-wemedia-lzp
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://159.75.89.7:3306/leadnews_admin?useUnicode=true&autoReconnect=true&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true&serverTimezone=UTC

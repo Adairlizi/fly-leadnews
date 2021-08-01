@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>fly-leadnews-admin</artifactId>
+    <artifactId>fly-leadnews-wemedia</artifactId>
 
     <dependencies>
         <!-- 引入依赖模块 -->

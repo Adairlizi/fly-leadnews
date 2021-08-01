@@ -1,4 +1,4 @@
-package com.fly.admin;
+package com.fly.wemedia;
 
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
@@ -9,15 +9,19 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-@MapperScan("com.fly.admin.mapper")
 @EnableDiscoveryClient
-public class AdminApplication {
+@MapperScan("com.fly.wemedia.mapper")
+public class WemediaApplication {
+
     public static void main(String[] args) {
-        SpringApplication.run(AdminApplication.class,args);
+        SpringApplication.run(WemediaApplication.class,args);
     }
 
+    /**
+     * mybatis-plus分页插件
+     */
     @Bean
-    public PaginationInterceptor paginationInterceptor(){
+    public PaginationInterceptor paginationInterceptor() {
         return new PaginationInterceptor();
     }
 }

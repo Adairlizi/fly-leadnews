@@ -9,11 +9,22 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>fly-leadnews-admin</artifactId>
+    <artifactId>fly-leadnews-user-1</artifactId>
 
     <dependencies>
         <!-- 引入依赖模块 -->
-
+        <dependency>
+            <groupId>com.fly</groupId>
+            <artifactId>fly-leadnews-model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fly</groupId>
+            <artifactId>fly-leadnews-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fly</groupId>
+            <artifactId>fly-leadnews-apis</artifactId>
+        </dependency>
         <!-- Spring boot starter -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -24,25 +35,18 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
 
-
         <dependency>
-            <groupId>com.fly</groupId>
-            <artifactId>fly-leadnews-model</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.fly</groupId>
-            <artifactId>fly-leadnews-apis</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>com.fly</groupId>
-            <artifactId>fly-leadnews-common</artifactId>
-        </dependency>
     </dependencies>
+
 
 </project>

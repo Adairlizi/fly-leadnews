@@ -14,6 +14,14 @@
         <module>fly-leadnews-common</module>
         <module>fly-leadnews-apis</module>
         <module>fly-leadnews-admin</module>
+        <module>fly-leadnews-gatway</module>
+        <module>fly-leadnews-admin-gateway</module>
+        <module>fly-leadnews-article</module>
+        <module>fly-leadnews-user</module>
+        <module>fly-leadnews-wemedia</module>
+        <module>fly-leadnews-user</module>
+        <module>fly-leadnews-user</module>
+        <module>fly-leadnews-user-1</module>
     </modules>
 
     <!-- 继承Spring boot工程 -->
